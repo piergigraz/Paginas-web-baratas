@@ -1,0 +1,73 @@
+@media only screen and (min-width:768px) and (max-width:992px) {
+    .container {
+        width: 100%;
+        max-width: 800px
+    }
+    .pricing__price {
+        padding: 35px 0 30px;
+        line-height: 20px
+    }
+    .pricing__item {
+        margin: 0;
+        padding: 30px 30px 30px
+    }
+}
+
+@media only screen and (min-width:280px) and (max-width:767px) {
+    .pricing__item {
+        margin: 0 0 47px;
+        padding: 30px 30px 30px
+    }
+}
+
+@media (max-width:767px) {
+    .price-styles {
+        display: block;
+        max-width: 360px;
+        margin: 0 auto
+    }
+}
+
+.price-four-el {
+    padding: 40px 15px 15px 15px
+}
+
+.price-four-el h3 {
+    text-align: center
+}
+
+@media (min-width:767px) {
+    .pricing__price {
+        line-height: 35px;
+        font-size: 50px
+    }
+    .pricing__title {
+        font-size: 16px
+    }
+    .pricing__item p {
+        font-size: 12px;
+        line-height: 20px
+    }
+    .pricing__item a.btn {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+}
+
+@media (max-width:991px) {
+    .pricing__price {
+        line-height: 35px;
+        font-size: 50px
+    }
+    .pricing__title {
+        font-size: 16px
+    }
+    .pricing__item p {
+        font-size: 12px;
+        line-height: 20px
+    }
+    .pricing__item a.btn {
+        padding-left: 5px;
+        padding-right: 5px
+    }
+}
