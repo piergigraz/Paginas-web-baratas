@@ -198,7 +198,11 @@ padding:2em;
     }
     .prices, .order-btn{
       font-size:0.8em;
-
+    }
+    .col:last-child{
+        margin-bottom:200px!important;
+        padding-left:-50px;
+        height:150%;
     }
 
     .cta{
