@@ -191,7 +191,7 @@ padding:2em;
      }
     .col{
         display: flex;
-        width:70vw;
+        width:50vw;
         height:130%;
         justify-content: flex-start;
         margin:20px;
@@ -210,8 +210,6 @@ padding:2em;
     .features{
         font-size: 0.8em;
         margin-left: -40px;
-        margin-right: 0;
-        padding:0;
 
     }
 
