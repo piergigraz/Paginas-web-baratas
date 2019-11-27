@@ -184,7 +184,45 @@ padding:2em;
 
 /* MOBILE FRIENDLY */
  @media screen and (max-width:1000px){
-    
+     footer{
+         position:fixed;
+         bottom:0;
+         width:100%;
+     }
+    .col{
+        display: flex;
+        width:50vw;
+        height:130%;
+        justify-content: flex-start;
+        margin:20px;
+    }
+    .prices, .order-btn,{
+      font-size:0.8em;
+
+    }
+
+    .cta{
+        position:relative;
+        top:-30px!important;
+    }
+
+
+    .features{
+        font-size: 0.8em;
+        margin-left: -40px;
+
+    }
+
+    .prices .row{
+        display:flex;
+        flex-direction: column;
+    }
+
+    footer{
+        font-size:0.7em;
+
+    }
+
     header{
         margin-top:10px;
     }
