@@ -196,14 +196,14 @@ padding:2em;
         justify-content: flex-start;
         margin:20px;
     }
-    .prices, .order-btn,{
+    .prices, .order-btn{
       font-size:0.8em;
 
     }
 
     .cta{
         position:relative;
-        top:-30px!important;
+        top:-10px!important;
     }
 
 
