@@ -36,6 +36,10 @@ header img, .cart img{
     display:flex;
 }
 
+.clearer{
+    background:transparent;
+    margin:50px;
+}
 
 .logo-container{
     flex:1;
@@ -146,13 +150,17 @@ padding:2em;
 }
 
 .prices ul {
- /* list-style: none; */
+  list-style: none;
  font-weight: 500;
  line-height: 1.5em;
  padding:1.5em 1em 1em 2.5em;
  /* margin-bottom:1.5em; */
 }
 
+.prices li:before {
+    content: "+";
+    margin-right: 4px;
+}
 
 .order-btn{
     padding:10px;
