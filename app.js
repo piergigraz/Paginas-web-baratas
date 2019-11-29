@@ -1,5 +1,5 @@
-const p = document.querySelector('#mobile-menu');
-const ul = document.querySelector('.nav-links');
+const p = document.querySelector('#mobile-icon');
+const ul = document.querySelector('#menu-mobile');
 
 
 const mobileMenu = () => {

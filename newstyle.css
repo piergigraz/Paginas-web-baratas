@@ -10,7 +10,7 @@ footer{
     background: lightslategray;
     width:90vw;
     margin:auto;
-    height:5vh;
+    min-height:5vh;
     text-align: center;
     border-radius: 15px 15px 0 0;
 }
@@ -36,6 +36,7 @@ header img, .cart img{
     display:flex;
 }
 
+
 .logo-container{
     flex:1;
     flex-direction: column;
@@ -57,7 +58,7 @@ nav {
     justify-content: flex-end;
 }
 
-.nav-links{
+#menu{
     list-style: none;
     justify-content: space-around;
 }
@@ -156,7 +157,7 @@ padding:2em;
 
 .order-btn{
     padding:10px;
-    margin:20px;
+    /* margin:20px; */
     font-weight: 500;
     font-size: medium;
     background: rgb(58, 196, 88);
@@ -173,16 +174,32 @@ padding:2em;
 
 .hide {
     display:none!important;
+    
 }
- #mobile-menu{
+ #mobile-icon{
      display: none;
  }
 
+/* RESET NAVBAR FOR DESKTOP */
+@media (min-width:700px){
+    #menu-mobile{
+        display:none!important;
+    }
+}
 /* MOBILE FRIENDLY */
  @media screen and (max-width:700px){
-    #mobile-menu {
-        z-index: 2;
+  
+    #mobile-icon {
+        z-index: 3;
         display: block;
+        position:fixed;
+        top:15px;
+        background: white;
+        padding:10px 5px;
+        border-radius: 5px;
+        border:1px solid black;
+        cursor:pointer;
+    
     }
 
     .rotated{
@@ -193,24 +210,31 @@ padding:2em;
     #cart{
         display:none;
     }
-
-    .nav-links{
+    #menu {
+        display: none;
+    }
+    #menu-mobile{
         flex-direction: column;
         display:block;
-        color:black;
-        background:white;
+        background:rgba(234, 234, 234, 0.9);
         border:1px solid grey;
         border-right:none;
         line-height: 2.5em;
-        padding:10%;
+        padding:15% 10% 10% 10%;
         position:fixed;
         right:0;
-        top:0;
+        top:-5px;
         min-width:30vw;
+        z-index: 3;
+        font-weight: 800;
+        margin-top: 10px;
+        list-style: none;
     }
+    #menu-mobile a:hover{
+        text-decoration-line: underline;
+        
 
-
-     */
+    }
     footer{
             position:fixed;
             bottom:0;
@@ -229,14 +253,11 @@ padding:2em;
     .text{
          font-size:1.5em;
      }
+
      .logo{
          display:none;
      }
-     .nav-links{
-         font-size:0.8em;
-         margin-top: 10px;
-     }
-    
+   
     .row{
         flex-direction: column;
         align-items: center;
@@ -247,6 +268,7 @@ padding:2em;
     }
     .col:last-child{
         margin-bottom:100px;
+        
     }
 
     .img img{
@@ -270,11 +292,4 @@ padding:2em;
      50%{
          transform: rotate(3deg);
      }
- }
-
- @keyframes menuRotation {
-     
-    
-    
-    
  }
