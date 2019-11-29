@@ -253,7 +253,7 @@ padding:2em;
          font-size:1.5em;
      }
 
-     .logo{
+    .logo{
          display:none;
      }
    
@@ -263,7 +263,7 @@ padding:2em;
 
     }
     .col{
-        min-width:70vw;
+        /* min-width:70vw;  TOLGO PERCHE' NON HO IDEA DEL MOTIVO*/
         
     }
     .col:last-child{
