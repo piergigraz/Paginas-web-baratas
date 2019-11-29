@@ -265,10 +265,12 @@ padding:2em;
     }
     .col{
         min-width:70vw;
+        
 
     }
     .col:last-child{
         margin-bottom:100px;
+        min-height:120%;
         
     }
 
