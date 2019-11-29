@@ -266,12 +266,10 @@ padding:2em;
     .col{
         min-width:70vw;
         
-
     }
     .col:last-child{
         margin-bottom:100px;
-        min-height:120%;
-        
+
     }
 
     .img img{
@@ -285,6 +283,14 @@ padding:2em;
 
     
 } /* END OF MOBILE FRIENDLY */
+
+@media (max-width:568px){
+    .col{
+        height:auto!important;
+    }
+
+}
+
 
 /* EFFECTS */
 
