@@ -217,9 +217,11 @@ padding:2em;
     }
     .col{
         min-width:70vw;
-
     }
- 
+    .col:last-child{
+        margin-bottom:100px;
+    }
+
     .img img{
          width:50vw;
          flex-direction: center;
