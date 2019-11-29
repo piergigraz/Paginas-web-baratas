@@ -108,21 +108,20 @@ section{
 
 .row{
     display:flex;
-    align-items: center;
-    margin-top:2em;
+    flex:1;
     width:100%;
 }
+
 .descr {
-flex:3;
 margin:15px;
 padding:2em;
 }
 
 .img img{
-    width:40vw;
-    flex:1;
+    width:30vw;
     border-radius: 20px; 
-    border:2px dashed black;   
+    border:2px dashed black; 
+    margin:5%;  
     }
 
 .img img:hover{
@@ -136,16 +135,14 @@ padding:2em;
 }
 
 .col{
+    display:flex;
+    flex-direction: column;
+    flex:1;
     background: linear-gradient(to right, rgb(209, 209, 209), rgb(231, 231, 231));
     border-radius: 25px;
     padding:35px;
     height:90%;
     margin:10px;
-    flex:1;
-    display:flex;
-    flex-direction: column;
-    justify-content: flex-end;
-
 }
 
 .prices ul {
@@ -165,67 +162,36 @@ padding:2em;
     background: rgb(58, 196, 88);
     color:#ffffffda;
 }
-.cta{
-    display: flex;
-    justify-self: flex-end; 
-    align-self: flex-end;   
+.col .cta{
+background: red;
 }
+
+.cta{
+    align-self: center;
+}
+
 .order-btn:hover{
     cursor: pointer;
 }
-.price-label{
-    display:flex;
-    flex-direction: column;
-    align-self: flex-end;
-}
-
 
 
 
 /* MOBILE FRIENDLY */
- @media screen and (max-width:1000px){
-     footer{
-         position:fixed;
-         bottom:0;
-         width:100%;
-     }
-    .col{
-        display: flex;
-        width:70vw;
-        height:70vh;
-        justify-content: flex-start;
-        margin:20px;
-    }
-    .prices, .order-btn{
-      font-size:0.8em;
-    }
-    .col:last-child{
-        margin-bottom:200px!important;
-        padding-left:-50px;
-        height:150%;
+ @media screen and (max-width:700px){
+    
+    .cart{
+        display:none;
     }
 
-    .cta{
-        position:relative;
-        top:-20px!important;
+    /* .menu-mobile{
+        display:block;
     }
-
-
-    .features{
-        font-size: 0.8em;
-        margin-left: -40px;
-        margin-right: 0;
-        padding:0;
-    }
-
-    .prices .row{
-        display:flex;
-        flex-direction: column;
-    }
-
+     */
     footer{
-        font-size:0.7em;
-
+            position:fixed;
+            bottom:0;
+            width:100%;
+            font-size:0.7em;
     }
 
     header{
@@ -248,25 +214,25 @@ padding:2em;
      }
     
     .row{
-        height:50vh;
-        margin:0;
-        width:100%;
-    }
- }
+        flex-direction: column;
+        align-items: center;
 
- @media screen and (max-height:500px){
-     
+    }
+    .col{
+        width:70vw;
+    }
+ 
     .img img{
-         width:30vw;
-         float: center;
-     }
-     .descr{
-         font-size:0.8em;
-         flex:3;
-     }
-     
+         width:50vw;
+         flex-direction: center;
+    }
+
+    .img:nth-child(1){
+        order: 1;
+    }
+
     
- }
+} /* END OF MOBILE FRIENDLY */
 
 /* EFFECTS */
 
