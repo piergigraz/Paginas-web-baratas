@@ -142,7 +142,7 @@ padding:2em;
     background: linear-gradient(to right, rgb(209, 209, 209), rgb(231, 231, 231));
     border-radius: 25px;
     padding:35px;
-    height:90%;
+    min-height:90%;
     margin:10px;
 }
 
