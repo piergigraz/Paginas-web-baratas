@@ -271,7 +271,7 @@ padding:2em;
 
     }
     .col{
-        /* min-width:70vw;  TOLGO PERCHE' NON HO IDEA DEL MOTIVO*/
+     min-width:70vw; 
         
     }
     .col:last-child{
