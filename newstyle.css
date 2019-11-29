@@ -283,12 +283,9 @@ padding:2em;
     
 } /* END OF MOBILE FRIENDLY */
 
-@media (max-width:568px){
-    .col{
-        height:auto!important;
-    }
-
-}
+/* @media (max-width:568px){
+    
+} */
 
 
 /* EFFECTS */
