@@ -37,9 +37,11 @@ header img, .cart img{
 #newLogo{
     transform:scale(0.55);
 }
+
 #svg_17, #svg_16{
     fill:transparent;
 }
+
 #svg_15{
     fill: rgb(67, 182, 86);
 }
@@ -63,9 +65,9 @@ header img, .cart img{
     align-content: center;
     margin-top:5%;
     height:100%;
+    width:100%;
     background-position: cover;
-    
-
+    z-index:1;
 }
 
 .logo{
@@ -216,6 +218,7 @@ flex:1;
 @media (min-width:1000px){
     #menu-mobile{
         display:none!important;
+
     }
 }
 /* MOBILE FRIENDLY */
@@ -225,7 +228,7 @@ flex:1;
         z-index: 8;
         display: block;
         position:fixed;
-        top:15px;
+        top:25px;
         background: white;
         padding:10px 5px;
         border-radius: 5px;
