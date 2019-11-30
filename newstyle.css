@@ -63,7 +63,6 @@ header img, .cart img{
     align-content: center;
     margin-top:5%;
     height:100%;
-    z-index:4;
     background-position: cover;
     
 
@@ -223,7 +222,7 @@ flex:1;
  @media screen and (max-width:900px){
     
     #mobile-icon{
-        z-index: 3;
+        z-index: 8;
         display: block;
         position:fixed;
         top:15px;
@@ -258,7 +257,7 @@ flex:1;
         right:0;
         top:-5px;
         min-width:30vw;
-        z-index: 3;
+        z-index: 8;
         font-weight: 800;
         margin-top: 10px;
         list-style: none;
