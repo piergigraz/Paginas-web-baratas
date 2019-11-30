@@ -214,7 +214,7 @@ flex:1;
  }
 
 /* RESET NAVBAR FOR DESKTOP */
-@media (min-width:700px){
+@media (min-width:1000px){
     #menu-mobile{
         display:none!important;
     }
@@ -288,7 +288,7 @@ flex:1;
      }
 
     .logo{
-         display:none;
+         display:block;
      }
    
     .row{
